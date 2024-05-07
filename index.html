@@ -6,12 +6,13 @@
     <title>Min Portfolie</title>
     <!-- Tailwind CSS CDN (du kan også downloade det og inkludere det lokalt) -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Eksterne CSS-stilarter (hvis du har nogen) -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="bg-slate-200 py-4 pr-8">
+    <nav class="bg-slate-200 py-4 pr-8 sticky m-0">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-white text-2xl font-bold">Min Portfolie</a>
             <ul class="flex space-x-4">
@@ -23,17 +24,50 @@
     </nav>
 
     <!-- Hero-sektion -->
-    <header class="bg-gray-900 text-white py-20 px-4 min-h-80">
+    <header class=" text-white py-20 px-4 min-h-80 bg-slate-800">
         <div class="container mx-auto text-center">
             <h1 class="text-4xl font-bold">Velkommen til Min Portfolie</h1>
             <p class="mt-4">Jeg er en webudvikler med lidenskab for at skabe smukke og brugervenlige websites.</p>
         </div>
     </header>
 
+    <!--Sidebar-->
+
+    <!-- <div class="float-right w-60 bg-cyan-300 h-screen p-5 m-3">
+        <div class="container bg-slate-600">
+            Dette er en sidebar
+        </div>
+    </div> -->
+
     <!-- Main indhold -->
-    <div class="container mx-auto py-10">
-        <h2 class="text-2xl font-bold mb-4">Mine Projekter</h2>
+    <div class="container m-4">
+        <h2 class="text-2xl font-bold mb-4 text-center">Mine Skills</h2>
+    </div>
+    
+    <div class="container mx-auto py-10 flex space-x-40 justify-center">
+        <!--Kort 1-->
+        
+        <div class="rounded-lg shadow-md p-4 w-80 h-80 bg-sky-200">
+            <h2 class=" text-xl text-center text-gray-900">Wordpress</h2>
+            <p>Jeg kan også lave sider i Wordpress</p>
+        </div>
+
+        <!--Kort 2-->
+        
+        <div class="bg-white rounded-lg shadow-md p-4 w-80 h-80">
+            <h2 class="text-xl text-center text-gray-900">HTML</h2>
+        </div>
+        
+        <!--Kort 3-->
+        <div class="bg-white rounded-lg shadow-md p-4 w-80 h-80">
+            <h2 class="text-xl text-center text-gray-900">Javascript</h2>
+        </div>
         <!-- Tilføj dine projektsektioner her -->
+    </div>
+
+    <!--Om mig indhold-->
+    <div class="container flex justify-center">
+        <h2 class="text-2xl font-bold mb-4">Hvem er jeg?</h2>
     </div>
 
     <!-- Footer -->
